@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
 
     static public event Action Shuffle;
+    static public event Action Shuffle2;
     /// <summary>タロットカードのPrefab</summary>
     [SerializeField] Image _cardPrefab;
     /// <summary>タロットカードのSprite</summary>
@@ -16,17 +17,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] RectTransform _canvasTransform;
     // カードの親
     [SerializeField] Transform _cardParent;
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ShuffleP1()
     {
@@ -47,5 +37,10 @@ public class GameManager : MonoBehaviour
     public void ShuffleP2()
     {
         Shuffle.Invoke();
+    }
+
+    public void ShuffleP3()
+    {
+        Shuffle2.Invoke();
     }
 }
