@@ -90,4 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveTime: 3
-  _isShuffled: 0
+  _anchor: {fileID: 0}
+  _xRandom: 8
+  _yRanom: 4
+  _rotationRanom: 90
