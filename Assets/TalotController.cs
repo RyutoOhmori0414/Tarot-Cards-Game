@@ -23,16 +23,7 @@ public class TalotController : MonoBehaviour
     /// <summary>逆位置の時のコメントのリスト</summary>
     [Header("逆位置の時のコメント")]
     [SerializeField] List<string> _falsePosition = new List<string>();
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-
-    }
-
+    
     public void ChangeSprite()
     {
         Image CardImage = _cardObject.GetComponent<Image>();
